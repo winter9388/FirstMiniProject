@@ -1,0 +1,285 @@
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    /* background-color: #293251; */
+}
+
+/*-------- back Button style --------*/
+.backButton{
+  display: flex;
+  position: fixed;
+  left:3%;
+  top:3%;
+  border:3px solid rgb(248, 61, 61);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton:hover{
+  border:3px solid black;
+}
+
+.backButton i{
+  font-size: 70px;
+  cursor: pointer;
+  color: rgb(248, 61, 61);
+}
+
+.backButton i:hover{
+  color: black;
+}
+
+.backButton i a{
+  display: inline-block;
+}
+
+.container{
+    width: 400px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-bottom : 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+}
+
+.app-title{
+    width: 400px;
+    height: 70px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 2em;
+    color: #293251;
+    display: inline-block;
+    margin-left: 85px;
+}
+
+.far{
+  font-size: 40px;
+  padding: 15px;
+  cursor: pointer;
+  color: red;
+}
+
+.far:hover{
+  font-size: 40px;
+  padding: 15px;
+  color: black;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 400px;
+    height: 280px;
+    background-color: #F4F9FF;
+}
+
+.searchEffect{
+    background-color: #F4F9FF;
+    animation: effect 0.8s ease-in-out;
+  }
+
+@keyframes effect{
+  0%,100%{
+    background-color: #F4F9FF;
+  }
+  50%{
+    background-color: rgb(150, 150, 252);
+  }
+}
+  
+.weather-icon{
+    width: 400px;
+    height: 130px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 400px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    color: red;
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.inputCity{
+  width: 400px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.input{
+  width: 180px;
+  height: 25px;
+  text-align: center;
+  color: gray;
+  border-radius: 10px;
+  border: solid 1.5px gray;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  color: #293251;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.appExplain {
+  width: 500px;
+  margin-top: 30px;
+  border: 2px rgb(252, 113, 136);
+  border-radius: 15px;
+  /* color: rgb(252, 113, 136); */
+  color: transparent;
+  padding: 10px 20px;
+}
+
+.appExplain p{  
+  line-height: 0.8em;
+  margin-left: 10px;
+}
+
+.appExplain p:nth-child(1){
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.appExplain p:nth-child(2){
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.ex {
+  padding-left: 15px;
+}
+
+.question{
+  color: black;
+  border: solid black 2px;
+  height: 200px;
+  animation: animate 1s ease-in-out;
+}
+
+@keyframes animate{
+  0%{
+    height: 0px;
+    color: transparent;
+  }
+  80%{
+    color: transparent;
+  }
+}
+
+.questionRemove{
+  color: transparent;
+  border: solid transparent 2px;
+  height: 200px;
+  animation: animate2 1s ease-in-out;
+}
+
+@keyframes animate2{
+  0%{
+    color: black;
+    border-color: black;
+    /* height: 200px; */
+  }
+  20%{
+    color: transparent;
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+/* ------------ memo ------------ */
+.memo {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  width: 120px;
+  height: 135px;
+  background-color: transparent;
+  border-radius: 10%;
+  border: solid gray 2px;
+  z-index: 1;
+}
+
+.memo p {
+  font-family: 'Titillium Web', sans-serif;
+  color: gray;
+  line-height: 0.8em;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+

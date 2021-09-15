@@ -1,0 +1,251 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*-------- back Button style --------*/
+.backButton{
+  display: flex;
+  position: fixed;
+  left:3%;
+  top:3%;
+  border:3px solid rgb(248, 61, 61);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton:hover{
+  border:3px solid black;
+}
+
+.backButton i{
+  font-size: 70px;
+  cursor: pointer;
+  color: rgb(248, 61, 61);
+}
+
+.backButton i:hover{
+  color: black;
+}
+
+.backButton i a{
+  display: inline-block;
+}
+
+/* ------------ container ------------ */
+.container{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    border-radius: 15px;
+    /* animation: animate 1s ease-in-out; */
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../img/sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #fff;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(240, 13, 13, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    /* color:#6eb200; */
+    color:rgb(224, 107, 107);
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    border-top: 1px solid rgba(240, 13, 13, 0.1);
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { 
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { 
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { 
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { 
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+/* ------------ memo ------------ */
+.memo {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  width: 120px;
+  height: 135px;
+  background-color: transparent;
+  border-radius: 10%;
+  border: solid gray 2px;
+  z-index: 1;
+}
+
+.memo p {
+  color: gray;
+  line-height: 0.8em;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

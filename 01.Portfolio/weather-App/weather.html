@@ -1,0 +1,60 @@
+<!-- HTML CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6238b2bba6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="font/Rimouski.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="backButton">
+    <a href="../mainPage/mainPage.html"><i class="fas fa-chevron-circle-left"></i></a>
+  </div>
+  <div class="container">
+    <div class="app-title">
+        <p>Weather App</p>
+        <i class="far fa-question-circle"></i>
+    </div>
+    <div class="notification"></div>
+    <div class="weather-container">
+      <div class="weather-icon">
+        <img src="icons/unknown.png" alt="">
+      </div>
+      <div class="temperature-value">
+        <p>- °<span>C</span></p>
+      </div>
+      <div class="temperature-description">
+        <p>-</p>
+      </div>
+      <div class="location">
+        <p>-</p>
+      </div>
+    </div>
+    <div class="inputCity">
+      <input type="text" class="input" placeholder="Input City Name">
+    </div>
+  </div>
+  <div class="appExplain">
+    <p>温度をクリックするとセ氏からカ氏に変わります。</p> 
+    <p>都市の名称を英語で入力してください。</p>
+    <p class="ex">Ex) 都市＝Tokyo</p>
+    <p class="ex">Ex) 埼玉＝Saitama</p>
+    <p class="ex">Ex) ソウル＝Seoul</p>
+    <p class="ex">Ex) ニューヨーク＝New york</p>  
+  </div>
+  <div class="memo">
+    <p>HTML / CSS</p>
+    <p>Java Script</p>
+    <p>JSON</p>
+    <p>Weather API</p>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

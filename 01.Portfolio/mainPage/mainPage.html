@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6238b2bba6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Main Page</title>
+</head>
+<body>
+  <div class="backButton">
+    <a href="../index.html"><i class="fas fa-chevron-circle-left"></i></a>
+  </div>
+  <div class="PContainer">
+    <div class="container">
+      <div class="toDoList imageSize appBox" onclick="window.location.href='../To-Do-List-master/toDoList.html'">
+        <div class="exImage">
+          <img src="images/toDoList.png" alt="">
+        </div>
+        <div class="appTitle">
+          <h2>TO DO LIST</h2>
+        </div>
+        <div class="inform">
+          <p>To Do List App です。</p>
+          <p>local storage活用した為、</P>
+          <p>refreshや再接続後にも情報が残ります。</P>
+        </div>
+      </div>
+
+      <div class="weatherApp imageSize appBox" onclick="location.href='../weather-App/weather.html'">
+        <div class="exImage">
+          <img src="images/wetherApp.png" alt="">
+        </div>
+        <div class="appTitle">
+          <h2>Weather App</h2>
+        </div>
+        <div class="inform">
+          <p>天気情報アプリケーションです。</p>
+          <p>位置情報と天気API活用。</p>
+          <p>位置情報取得設定を許可してください。</P>
+          <p>都市の名称から検索も可能です。</P>
+        </div>
+      </div>
+
+      <div class="toDoList imageSize appBox" onclick="location.href='../snakeGame/snake.html'">
+        <div class="exImage">
+          <img src="images/snakeGame.png" alt="">
+        </div>
+        <div class="appTitle">
+          <h2>Snake Game</h2>
+        </div>
+        <div class="inform">
+          <p>Snake Gameです。</p>
+          <p>canvas機能を活用。</p>
+          <p>←,↑,↓,→キーを使用して動きます。</p>
+          <p>20点取ると勝利します。</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- <div class="restMenu">
+      <div class=title>
+        <p>その他</p>
+      </div>
+      <div class=restSite>
+        <a href="#">site1</a>
+      </div>
+      <div class=restSite>
+        <a href="#">site1</a>
+      </div>
+      <div class=restSite>
+        <a href="#">site1</a>
+      </div> -->
+      
+    </div>
+  </div>
+</body>
+</html>
